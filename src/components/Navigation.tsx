@@ -9,9 +9,10 @@ const Navigation = () => {
 
   const navItems = [
     { name: 'Home', path: '/' },
-    { name: 'Communities', path: '/communities' },
-    { name: 'History', path: '/history' },
-    { name: 'Contact Us', path: '/contact' },
+    { name: 'Services', path: '/services' },
+    { name: 'How It Works', path: '/how-it-works' },
+    { name: 'About Us', path: '/about' },
+    { name: 'Contact', path: '/contact' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -22,8 +23,8 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="text-2xl font-serif font-semibold text-primary">
-              Heritage
+            <div className="text-2xl font-bold text-primary">
+              SecureAudit
             </div>
           </Link>
 
@@ -42,6 +43,12 @@ const Navigation = () => {
                 {item.name}
               </Link>
             ))}
+            <Link 
+              to="/login"
+              className="bg-primary text-primary-foreground px-4 py-2 rounded-md hover:bg-primary/90 transition-colors"
+            >
+              Client Portal
+            </Link>
           </div>
 
           {/* Mobile menu button */}

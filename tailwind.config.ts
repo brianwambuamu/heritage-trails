@@ -19,7 +19,6 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				serif: ['Crimson Text', 'serif'],
 				sans: ['Inter', 'sans-serif'],
 			},
 			colors: {
@@ -56,11 +55,12 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				heritage: {
-					brown: 'hsl(var(--heritage-brown))',
-					beige: 'hsl(var(--heritage-beige))',
-					green: 'hsl(var(--heritage-green))',
-					cream: 'hsl(var(--heritage-cream))'
+				security: {
+					blue: 'hsl(var(--security-blue))',
+					light: 'hsl(var(--security-light))',
+					green: 'hsl(var(--security-green))',
+					orange: 'hsl(var(--security-orange))',
+					gray: 'hsl(var(--security-gray))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
